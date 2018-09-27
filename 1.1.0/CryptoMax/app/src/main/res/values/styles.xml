@@ -1,0 +1,68 @@
+<resources>
+    <style name="DefaultTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@android:color/background_light</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+        <item name="swirl_ridgeColor">?android:attr/textColorSecondary</item>
+        <item name="swirl_errorColor">?android:attr/colorAccent</item>
+    </style>
+
+
+    <style name="DefaultTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@android:color/background_light</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="swirl_ridgeColor">?android:attr/textColorSecondary</item>
+        <item name="swirl_errorColor">?android:attr/colorAccent</item>
+    </style>
+
+
+    <style name="DraculaTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorDraculaPrimary</item>
+        <item name="colorPrimaryDark">@color/colorDraculaPrimary</item>
+        <item name="colorAccent">@color/colorDraculaAccent</item>
+        <item name="android:colorBackground">@color/colorDraculaBackground</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorHint">@color/colorDraculaHint</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/colorDraculaPrimary</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+        <item name="android:colorForeground">@android:color/white</item>
+        <item name="swirl_ridgeColor">?android:attr/textColorSecondary</item>
+        <item name="swirl_errorColor">?android:attr/colorAccent</item>
+    </style>
+
+
+    <style name="DraculaTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorDraculaPrimary</item>
+        <item name="colorPrimaryDark">@color/colorDraculaPrimary</item>
+        <item name="colorAccent">@color/colorDraculaAccent</item>
+        <item name="android:colorBackground">@color/colorDraculaBackground</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorHint">@color/colorDraculaHint</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorForeground">@android:color/white</item>
+        <item name="swirl_ridgeColor">?android:attr/textColorSecondary</item>
+        <item name="swirl_errorColor">?android:attr/colorAccent</item>
+    </style>
+
+    <style name="SpinnerTextViewItem" parent="@android:style/Widget.TextView" >
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+</resources>
+

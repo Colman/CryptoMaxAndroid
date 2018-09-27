@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#222222</color>
+    <color name="colorAccent">#bd421b</color>
+
+    <color name="colorDraculaPrimary">#243447</color>
+    <color name="colorDraculaPrimaryDark">#1c2936</color>
+    <color name="colorDraculaSecondary">#202020</color>
+    <color name="colorDraculaAccent">#bd421b</color>
+    <color name="colorDraculaBackground">#2A2A2A</color>
+    <color name="colorDraculaHint">#88FFFFFF</color>
+</resources>

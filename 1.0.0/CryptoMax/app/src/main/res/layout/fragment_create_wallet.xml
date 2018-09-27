@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maxtechnologies.cryptomax.Main.WalletFragments.CreateWalletFragment">
+
+    <com.maxtechnologies.cryptomax.Objects.LockableViewPager
+        android:id="@+id/pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/currency_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.maxtechnologies.cryptomax.Objects.LockableViewPager>
+
+    <ImageView
+        android:id="@+id/currency_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/currency_circle"
+        app:layout_constraintBottom_toTopOf="@+id/currency_title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/currency_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/currency"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/currency_image"
+        app:layout_constraintStart_toStartOf="@+id/currency_image" />
+
+    <ProgressBar
+        android:id="@+id/progress_1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/colorAccent"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="@+id/currency_image"
+        app:layout_constraintEnd_toStartOf="@+id/password_image"
+        app:layout_constraintStart_toEndOf="@+id/currency_image"
+        app:layout_constraintTop_toTopOf="@+id/currency_image" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <ImageView
+        android:id="@+id/password_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/password_circle"
+        app:layout_constraintBottom_toTopOf="@+id/password_title"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_1"
+        app:layout_constraintStart_toStartOf="@+id/guideline_1" />
+
+    <TextView
+        android:id="@+id/password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password_image"
+        app:layout_constraintStart_toStartOf="@+id/password_image" />
+
+    <ProgressBar
+        android:id="@+id/progress_2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:progressTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/password_image"
+        app:layout_constraintEnd_toStartOf="@+id/fingerprint_image"
+        app:layout_constraintStart_toEndOf="@+id/password_image"
+        app:layout_constraintTop_toTopOf="@+id/password_image" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <ImageView
+        android:id="@+id/fingerprint_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/fingerprint_circle"
+        app:layout_constraintBottom_toTopOf="@+id/fingerprint_title"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_2"
+        app:layout_constraintStart_toStartOf="@+id/guideline_2" />
+
+    <TextView
+        android:id="@+id/fingerprint_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/fingerprint"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fingerprint_image"
+        app:layout_constraintStart_toStartOf="@+id/fingerprint_image" />
+
+    <ImageView
+        android:id="@+id/email_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/email_circle"
+        app:layout_constraintBottom_toTopOf="@+id/email_title"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/email_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/email_image"
+        app:layout_constraintStart_toStartOf="@+id/email_image" />
+
+    <ProgressBar
+        android:id="@+id/progress_3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/fingerprint_image"
+        app:layout_constraintEnd_toStartOf="@+id/email_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fingerprint_image"
+        app:layout_constraintTop_toTopOf="@+id/fingerprint_image" />
+
+</android.support.constraint.ConstraintLayout>

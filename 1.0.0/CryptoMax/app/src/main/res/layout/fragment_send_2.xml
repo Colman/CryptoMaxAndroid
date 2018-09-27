@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maxtechnologies.cryptomax.Main.WalletFragments.CreateWalletFragment">
+
+    <com.maxtechnologies.cryptomax.Objects.LockableViewPager
+        android:id="@+id/pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/recipient_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.maxtechnologies.cryptomax.Objects.LockableViewPager>
+
+    <ImageView
+        android:id="@+id/recipient_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/check_circle"
+        app:layout_constraintBottom_toTopOf="@+id/recipient_title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/recipient_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/recipient"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recipient_image"
+        app:layout_constraintStart_toStartOf="@+id/recipient_image" />
+
+    <ProgressBar
+        android:id="@+id/progress_1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progress="100"
+        android:progressTint="@color/colorAccent"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="@+id/recipient_image"
+        app:layout_constraintEnd_toStartOf="@+id/amount_image"
+        app:layout_constraintStart_toEndOf="@+id/recipient_image"
+        app:layout_constraintTop_toTopOf="@+id/recipient_image" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <ImageView
+        android:id="@+id/amount_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/currency_circle"
+        app:layout_constraintBottom_toTopOf="@+id/amount_title"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_1"
+        app:layout_constraintStart_toStartOf="@+id/guideline_1" />
+
+    <TextView
+        android:id="@+id/amount_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/amount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/amount_image"
+        app:layout_constraintStart_toStartOf="@+id/amount_image" />
+
+    <ProgressBar
+        android:id="@+id/progress_2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:progressTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/amount_image"
+        app:layout_constraintEnd_toStartOf="@+id/authenticate_image"
+        app:layout_constraintStart_toEndOf="@+id/amount_image"
+        app:layout_constraintTop_toTopOf="@+id/amount_image" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <ImageView
+        android:id="@+id/authenticate_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/password_circle"
+        app:layout_constraintBottom_toTopOf="@+id/authenticate_title"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_2"
+        app:layout_constraintStart_toStartOf="@+id/guideline_2" />
+
+    <TextView
+        android:id="@+id/authenticate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/authenticate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/authenticate_image"
+        app:layout_constraintStart_toStartOf="@+id/authenticate_image" />
+
+    <ImageView
+        android:id="@+id/confirm_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/confirm_circle"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_title"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/confirm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/confirm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/confirm_image"
+        app:layout_constraintStart_toStartOf="@+id/confirm_image" />
+
+    <ProgressBar
+        android:id="@+id/progress_3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/authenticate_image"
+        app:layout_constraintEnd_toStartOf="@+id/confirm_image"
+        app:layout_constraintStart_toEndOf="@+id/authenticate_image"
+        app:layout_constraintTop_toTopOf="@+id/authenticate_image" />
+
+</android.support.constraint.ConstraintLayout>

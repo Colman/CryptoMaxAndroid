@@ -1,0 +1,165 @@
+#########################################################################################################################################
+#                                                                      UNSORTED                                                         #
+#########################################################################################################################################
+Unspent algorithim ***
+Ripple transactions
+Volume indicator
+Tweek chart transactions
+Show transactions option on chart
+
+Private key screen
+Specific Exceptions
+Transaction values
+Null dates in chart transactions
+Email in spam folder and design
+Change you to me
+Edit text lengths
+Loading animations everywhere
+Loading screen and name
+Updating UI in fragments that are already gone from other threads
+Unsubbing from tickers and book on idle
+Tutorial
+Accent on menu items
+Find and resolve all crashes
+Check scaling for all devices
+Check all warnings
+
+
+
+
+#########################################################################################################################################
+#                                                                      SORTED                                                           #
+#########################################################################################################################################
+------------------
+| Loading Screen |
+------------------
+Don't use scheduler for animation
+Disable clicking
+
+
+
+------------------
+| Market Summary |
+------------------
+Initial prices and callbacks
+Prices at top and bottom of list
+Toolbar shadow
+Price background
+Top drag to update prices
+Sorting coins (main)
+Following coins (toolbar)
+
+
+
+---------
+| Chart |
+---------
+Add news fragment
+Back button and toolbar design
+Add price notification with chart line
+Add wallets fragment
+Settings in landscape
+Ticker on y-Axis
+Chart x-axis
+Choose line chart
+Underlay indicators
+Show transactions on chart
+Chart fullscreen scaling and bar hiding
+Aspect ratio and focus
+Mineable data
+
+
+
+-----------
+| Wallets |
+-----------
+Fill-out entire flow
+Add password, finger prints, and facial recognition to new wallet
+Encrypting private key
+Generating wallets securely
+Make transactions securely
+Transaction toasts
+Clicking off QR code popup
+Wallet options
+Filter transactions
+Private key terms of service
+Manual entry of address & private key
+
+
+
+--------
+| News |
+--------
+News HTML parsing
+Sort news by popularity and most recent
+News notifications for followed coins (on by default, change in settings)
+
+
+
+------------
+| Contacts |
+------------
+Contacts
+Profile pictures on exchange
+
+
+
+------------
+| Settings |
+------------
+Saving settings on back pressed
+24 hour clock everywhere
+Absolute price change by all changes
+Price flash
+
+
+----------
+| Drawer |
+----------
+Asset worth
+Add general news button
+Show profile picture
+Edit profile popup
+
+
+
+------------------
+| User Interface |
+------------------
+Titles for all activities
+Entire app UI design
+Add default profile picture
+Logo fading and upward movement in wallet
+Transaction list look
+Order book design
+Loading animations everywhere
+Button animations
+Alert box design
+Multiple themes
+QR code scanner square (with theme color)
+Check scaling for all devices
+
+
+
+---------
+| Other |
+---------
+Layout IDs
+Fragment stack
+Recycler views everywhere
+Add remaining exchanges
+Conversions everywhere with instant update
+Commas option in fiat string
+Tutorial
+Collect data
+Network and battery usage when idle
+Minimize network and battery usage when using
+Remove unused logos
+Report a bug
+App feedback
+CoinTX social media
+Find and resolve all crashes
+Thorough commenting
+Removing unused imports
+
+

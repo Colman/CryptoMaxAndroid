@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/menu">
+        <menu>
+            <item
+                android:id="@+id/markets_button"
+                android:icon="@drawable/chart_d"
+                android:title="@string/markets" />
+
+            <item
+                android:id="@+id/wallets_button"
+                android:icon="@drawable/wallet_d"
+                android:title="@string/wallets" />
+
+            <item
+                android:id="@+id/news_button"
+                android:icon="@drawable/news_d"
+                android:title="@string/news" />
+            <item
+                android:id="@+id/contacts_button"
+                android:icon="@drawable/contacts_d"
+                android:title="@string/contacts" />
+
+            <item
+                android:id="@+id/tutorial_button"
+                android:icon="@drawable/tutorial_d"
+                android:title="@string/tutorial" />
+
+            <item
+                android:id="@+id/settings_button"
+                android:icon="@drawable/settings_d"
+                android:title="@string/settings" />
+        </menu>
+    </item>
+
+</menu>
